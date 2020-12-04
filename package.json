@@ -1,0 +1,18 @@
+{
+  "name": "gajipayslip",
+  "version": "1.0.0",
+  "description": "payslip generation for bukugaji",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Rakesh Trimbake",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "html-pdf": "^2.2.0",
+    "moment": "^2.29.1"
+  }
+}

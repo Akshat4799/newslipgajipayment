@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 10px 40px;
+      }
+      body{
+          font-family: sans-serif;
+          zoom: 1;
+          padding: 0px 5px;
+          font-size: 18px;
+      }
+      .header__info > img{
+        position:absolute;
+        right: 0;
+        margin-right: 8%;
+      }
+      .header__name{
+          font-size: 1.9rem;
+          color: blue;
+          font-weight: 800;
+          margin-left: 4%;
+      }
+      .emp__info,.company__info{
+          display: flex;
+          justify-content: space-between;
+      }
+      .emp__info__name,.company__info__name{
+          margin-left: -10px;
+      }
+      .emp__info__pay__period,.company__info__salary{
+          margin-right: -20px;
+      }
+      table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-bottom: 35px; 
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.extra__td,.payment__td {
+    padding: 10px 0px;
+}
+.bukugaji__slip{
+    position: absolute;
+    margin-top: 3%;
+    right:3%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="header__info">
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="payslip"
+      />
+    </div>
+    <div  class="header__name">
+        SLIP GAJI
+    </div>
+    <table style="margin-top: 16px;"  class="center">
+        <tr>
+            <td style="padding-left: 0 !important;"><strong>Employee Name:</strong><%=reports.ledger.information.employee_name%></td>
+            <td ><strong>Pay Period:</strong><%=reports.ledger.information.pay_cycle%></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 0 !important;"><strong>Company Name:</strong>Bukugaji</td>
+            <td ><strong>Salary:</strong>Rp <%=reports.ledger.information.salary.toLocaleString(
+                undefined,
+                { minimumFractionDigits: 0 }
+              ).replace(/,/g, '.')%></strong> /month</td>
+        </tr>
+    </table>
+    
+    <% let salary = 0; %>
+    <% let payment = 0; %>
+    <table class="center">
+        <tr style="border-bottom:4px black solid">
+          <th style="color:rgb(31, 31, 211);" align="left">Attendance</th>
+          <th align="left">Days</th>
+          <th align="right">Gaji</th>
+        </tr>
+        <tr>
+          <td>Days Present</td>
+          <td><%=reports.ledger.attendance.present_days%></td>
+          <td style="color: green !important;" align="right">Rp <%=reports.ledger.salary.salary_summary.present_days_wages.toLocaleString(
+            undefined,
+            { minimumFractionDigits: 0 }
+          ).replace(/,/g, '.')%></td>
+        </tr>
+        <tr>
+            <td>Half Days</td>
+            <td><%=reports.ledger.attendance.half_days%></td>
+            <td style="color: green !important;" align="right">Rp <%=reports.ledger.salary.salary_summary.half_days_wages.toLocaleString(
+                undefined,
+                { minimumFractionDigits: 0 }
+              ).replace(/,/g, '.')%></td>
+        </tr>
+        <tr>
+            <td>Absences</td>
+            <td><%=reports.ledger.attendance.absent_days%></td>
+            <td style="color: green !important;" align="right">Rp <%=reports.ledger.salary.salary_summary.absent_days_wages.toLocaleString(
+                undefined,
+                { minimumFractionDigits: 0 }
+              ).replace(/,/g, '.')%></td>
+        </tr>
+        <tr style="border-bottom: 4px #cccccc solid;">
+            <td>Holidays</td>
+            <td><%=reports.ledger.attendance.paid_holidays%></td>
+            <td style="color: green !important;" align="right">Rp <%=reports.ledger.salary.salary_summary.paid_holidays_wages.toLocaleString(
+                undefined,
+                { minimumFractionDigits: 0 }
+              ).replace(/,/g, '.')%></td>
+        </tr>
+        <tr>
+            <td class="payment__td"><strong>Total Gaji Earned</strong</td>
+            <td></td>
+            <td style="color: green !important;" class="payment__td" align="right"><strong>Rp <%= totalGaji.toLocaleString(
+                undefined,
+                { minimumFractionDigits: 0 }
+              ).replace(/,/g, '.') %></strong> </td>
+        </tr>
+        </table>
+        <table class="center">
+            <tr style="border-bottom:4px black solid">
+            <th style="color:rgb(31, 31, 211);" align="left">Extras</th>
+            <th align="right">Amount</th>
+            </tr>
+            <% reports.ledger.salary.salary_ledger.forEach((report,index) => {%>
+                <tr class="header__monthly">
+                  <td align="left"><%=report.description%></td>
+                  <td class="extra__td" align="right">
+                    <% if(report.ledger_type  == "Addition"){ %>
+                      <% salary += report.amount %> 
+                      <span style="color: green !important;">Rp <%=report.amount.toLocaleString(
+                        undefined,
+                        { minimumFractionDigits: 0 }
+                      ).replace(/,/g, '.')%></span>
+                  <% } else{ %>  
+                      <% salary -= report.amount %> 
+                      <span style="color: red !important;">Rp <%=report.amount.toLocaleString(
+                        undefined,
+                        { minimumFractionDigits: 0 }
+                      ).replace(/,/g, '.')%></span>
+                  <% } %>
+                     </td>
+                </tr>
+                <% });%>
+                <tr style="border-top: 4px #ccc solid;">
+                    <strong><td class="payment__td" style="color: rgb(46, 48, 48) !important;" align="left" width="55%"><strong>Total Extra</strong></td></strong>
+                    <td class="extra__td" style="color: rgb(46, 48, 48) !important;" align="right" width="45%">
+                        <% if(salary > 0){ %>
+                            <span style="color: green;">
+                        Rp <%=salary.toLocaleString(
+                      undefined,
+                      { minimumFractionDigits: 0 }
+                    ).replace(/,/g, '.')%></span>
+                    <% }else{ %> 
+                        <span style="color: red;">
+                            Rp <%=salary.toLocaleString(
+                          undefined,
+                          { minimumFractionDigits: 0 }
+                        ).replace(/,/g, '.')%></span>
+                        <% } %> 
+                     </td>
+                </tr>
+        </table>
+        <table class="center">
+            <tr style="border-bottom:4px black solid">
+            <th style="color:rgb(31, 31, 211);" align="left">Payments</th>
+            <th align="right">Amount</th>
+            </tr>
+            <% reports.ledger.salary.payments_ledger.forEach((report,index) => {%>
+                <tr class="header__monthly">
+                  <td align="left"><%=report.description%></td>
+                  <td class="payment__td" align="right">
+                    
+                      <% payment += report.amount %> 
+                      <span style="color: green !important;">Rp <%=report.amount.toLocaleString(
+                        undefined,
+                        { minimumFractionDigits: 0 }
+                      ).replace(/,/g, '.')%></span>
+                     </td>
+                </tr>
+                <% });%>
+                <tr style="border-top: 4px #ccc solid;">
+                    <strong><td class="payment__td" style="color: rgb(46, 48, 48) !important;" align="left" width="55%"><strong>Total Payments</strong></td></strong> 
+                    <td class="payment__td" style="color: rgb(46, 48, 48) !important;" align="right" width="45%"><% if(salary > 0){ %>
+                        <span style="color: green;">
+                    Rp <%=payment.toLocaleString(
+                  undefined,
+                  { minimumFractionDigits: 0 }
+                ).replace(/,/g, '.')%></span>
+                <% }else{ %> 
+                    <span style="color: red;">
+                        Rp <%=payment.toLocaleString(
+                      undefined,
+                      { minimumFractionDigits: 0 }
+                    ).replace(/,/g, '.')%></span>
+                    <% } %>  </td>
+                </tr>
+        </table>
+        <table class="center">
+            <tr style="border-top: 4px black solid !important;border-bottom: 4px black solid !important;">
+                <td style="padding:0 !important;"><strong>Remaining Balance</strong></td>
+                <td></td>
+                <td  class="payment__td" align="right"><strong>Rp <%=(totalGaji+salary-payment).toLocaleString(
+                    undefined,
+                    { minimumFractionDigits: 0 }
+                  ).replace(/,/g, '.')%></strong></td>
+            </tr>
+        </table>
+        <div class="bukugaji__slip">
+            <span style="color: blue;">Powered by Bukugaji</span>
+        </div>
+  </body>
+</html>

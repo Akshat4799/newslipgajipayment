@@ -1,0 +1,413 @@
+{
+    "ledger": {
+        "information": {
+            "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+            "pay_cycle": "Oct 10 - Nov 09",
+            "salary": 50000,
+            "employee_name": "Akshat Parmar",
+            "phone_number": "(973) 652-1239",
+            "worker_type": "Bulanan",
+            "pay_cycle_start_date": "2020-10-10",
+            "pay_cycle_end_date": "2020-11-09"
+        },
+        "attendance": {
+            "present_days": 27,
+            "absent_days": 1,
+            "half_days": 2,
+            "paid_holidays": 1
+        },
+        "salary": {
+            "ledger_id": "58be52e1-8e5e-4006-86e1-56b4ef7c9810",
+            "salary_id": "58be52e1-8e5e-4006-86e1-56b4ef7c9810",
+            "total_salary_owed": 46774.1935483871,
+            "salary_summary":{
+                "present_days_wages":100000,
+                "half_days_wages":500,
+                "absent_days_wages":121212,
+                "paid_holidays_wages":93829
+            },
+            "net_salary": 76149.19354838709,
+            "payments": 75000,
+            "net_payable": 1149.1935483870911,
+            "previous_balance": 0,
+            "total_payable": 1149,
+            "salary_ledger": [
+                {
+                    "adjustment_id": "83d83ab0-ab5a-4e50-96f7-2367700d9dcf",
+                    "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                    "description": "Bonus",
+                    "amount": 50000,
+                    "adjustment_type": "Addition",
+                    "adjustment_date": "2020-11-09",
+                    "adjustments_id": "83d83ab0-ab5a-4e50-96f7-2367700d9dcf",
+                    "date": "Nov 09",
+                    "ledger_type": "Addition"
+                },
+                {
+                    "adjustment_id": "715b3b2b-2343-42bb-ae86-814da904f322",
+                    "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                    "description": "Lembur( 2500 * 1.75 )",
+                    "amount": 4375,
+                    "adjustment_type": "Addition",
+                    "adjustment_date": "2020-11-09",
+                    "adjustments_id": "715b3b2b-2343-42bb-ae86-814da904f322",
+                    "date": "Nov 09",
+                    "ledger_type": "Addition"
+                },
+                {
+                    "adjustment_id": "e3eed42f-b2e9-44ae-b641-85168eabe9ba",
+                    "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                    "description": "Pinjaman",
+                    "amount": 25000,
+                    "adjustment_type": "Deduction",
+                    "adjustment_date": "2020-11-09",
+                    "adjustments_id": "e3eed42f-b2e9-44ae-b641-85168eabe9ba",
+                    "date": "Nov 09",
+                    "ledger_type": "Deduction"
+                }
+            ],
+            "payments_ledger": [
+                {
+                    "adjustment_id": "fd8e7eda-6a69-4dc1-b9a9-09b8f1f009e4",
+                    "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                    "description": "Salary Payment",
+                    "amount": 50000,
+                    "adjustment_type": "Payment",
+                    "adjustment_date": "2020-11-09",
+                    "adjustments_id": "fd8e7eda-6a69-4dc1-b9a9-09b8f1f009e4",
+                    "date": "Nov 09",
+                    "ledger_type": "Payment"
+                },
+                {
+                    "adjustment_id": "1aed7b23-ad16-4b40-bb28-49e011cfa481",
+                    "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                    "description": "Pembayaran Gaji",
+                    "amount": 25000,
+                    "adjustment_type": "Payment",
+                    "adjustment_date": "2020-11-09",
+                    "adjustments_id": "1aed7b23-ad16-4b40-bb28-49e011cfa481",
+                    "date": "Nov 09",
+                    "ledger_type": "Payment"
+                }
+            ]
+        },
+        "attendance_details": [
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Tidak Hadir",
+                "date": "2020-11-09",
+                "punch_in": null,
+                "punch_out": "00:00",
+                "hours_worked": "00:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Setengah Hari",
+                "date": "2020-11-08",
+                "punch_in": null,
+                "punch_out": "00:00",
+                "hours_worked": "04:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-11-07",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Libur Berbayar",
+                "date": "2020-11-06",
+                "punch_in": null,
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Setengah Hari",
+                "date": "2020-11-05",
+                "punch_in": null,
+                "punch_out": "00:00",
+                "hours_worked": "04:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-11-04",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-11-03",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-11-02",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-11-01",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-31",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-30",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-29",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-28",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-27",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-26",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-25",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-24",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-23",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-22",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-21",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-20",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-19",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-18",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-17",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-16",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-15",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-14",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-13",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-12",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-11",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            },
+            {
+                "name": "Akshat Parmar",
+                "worker_type": "Monthly",
+                "employee_id": "55ae69c5-a692-45ea-b939-9bd0f6f40111",
+                "attendance_type": "Kehadiran",
+                "date": "2020-10-10",
+                "punch_in": "00:00",
+                "punch_out": "00:00",
+                "hours_worked": "08:00"
+            }
+        ],
+        "attendance_summary": {
+            "present_days": 27,
+            "half_days": 2,
+            "paid_holidays": 1,
+            "absent_days": 1
+        }
+    }
+}
