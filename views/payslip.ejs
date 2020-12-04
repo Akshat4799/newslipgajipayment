@@ -13,6 +13,7 @@
           zoom: 1;
           padding: 0px 5px;
           font-size: 18px;
+          margin-top: 20px;
       }
       .header__info > img{
         position:absolute;
@@ -73,11 +74,11 @@
     <table style="margin-top: 16px;"  class="center">
         <tr>
             <td style="padding-left: 0 !important;"><strong>Employee Name:</strong><%=reports.ledger.information.employee_name%></td>
-            <td ><strong>Pay Period:</strong><%=reports.ledger.information.pay_cycle%></td>
+            <td><strong>Pay Period:</strong><%=reports.ledger.information.pay_cycle%></td>
         </tr>
         <tr>
             <td style="padding-left: 0 !important;"><strong>Company Name:</strong>Bukugaji</td>
-            <td ><strong>Salary:</strong>Rp <%=reports.ledger.information.salary.toLocaleString(
+            <td style="padding-right: 20px;"><strong style="margin-left: 36px;">Salary:</strong>Rp <%=reports.ledger.information.salary.toLocaleString(
                 undefined,
                 { minimumFractionDigits: 0 }
               ).replace(/,/g, '.')%></strong> /month</td>
